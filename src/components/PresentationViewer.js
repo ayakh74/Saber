@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Play, RotateCcw, Zap, Shield, Cpu, Network, Clock, AlertTriangle, CheckCircle, XCircle, ArrowDown, GitBranch, Layers, Hash, Lock, Users, Activity, BarChart2, Code2, Database, Globe, Box, Shuffle, Award, BookOpen, Target, Settings, Key, Workflow } from "lucide-react";
 import MeshBackground from "./ui/MeshBackground";
-import Image from "next/image";
+
 
 /* ==============================
    SECTION METADATA
@@ -303,7 +303,7 @@ function getSlides() {
     // 0: TITLE
     <div key="0" className="slide-wrapper" style={{ justifyContent: "center", alignItems: "center", textAlign: "center" }}>
       <div style={{ position: "absolute", inset: 0, overflow: "hidden" }}>
-        <Image src="/saber_hero.png" fill style={{ objectFit: "cover", opacity: 0.18 }} alt="" priority sizes="100vw" />
+        <img src="/saber_hero.png" style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.18 }} alt="" />
       </div>
       <div style={{ position: "relative", zIndex: 5, maxWidth: "900px" }}>
         <span className="badge badge-a" style={{ marginBottom: "2rem" }}>Blockchain Seminar 2026</span>
@@ -371,14 +371,14 @@ function getSlides() {
           </div>
         </div>
         <div className="img-container">
-          <Image src="/bft_nodes.png" fill style={{ objectFit: "cover" }} alt="BFT Nodes" priority sizes="100vw" />
+          <img src="/bft_nodes.png" style={{ objectFit: "cover", width: "100%", height: "100%" }} alt="BFT Nodes" />
         </div>
       </div>
     </div>,
 
     // 3: CRISIS
     <div key="3" className="slide-wrapper" style={{ justifyContent: "center", textAlign: "center" }}>
-      <div style={{ position: "absolute", inset: 0 }}><Image src="/cryptokitties_chaos.png" fill style={{ objectFit: "cover", opacity: 0.12 }} alt="" priority sizes="100vw" /></div>
+      <div style={{ position: "absolute", inset: 0 }}><img src="/cryptokitties_chaos.png" style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.12 }} alt="" /></div>
       <div style={{ position: "relative", zIndex: 5, maxWidth: "800px", margin: "0 auto" }}>
         <span className="badge badge-c" style={{ marginBottom: "2rem" }}><AlertTriangle size={12} /> The Crisis</span>
         <h2 className="t-hero" style={{ marginBottom: "1.5rem" }}>December 2017.<br /><span className="c-crimson">CryptoKitties</span><br />broke Ethereum.</h2>
@@ -425,7 +425,7 @@ function getSlides() {
           </div>
         </div>
         <div className="img-container">
-          <Image src="/blockchain_congestion.png" fill style={{ objectFit: "cover" }} alt="Congestion" priority sizes="100vw" />
+          <img src="/blockchain_congestion.png" style={{ objectFit: "cover", width: "100%", height: "100%" }} alt="Congestion" />
         </div>
       </div>
     </div>,
@@ -486,7 +486,7 @@ function getSlides() {
       <h2 className="t-title" style={{ marginBottom: "2rem" }}>Execution ≠ Consensus</h2>
       <div className="grid-2" style={{ alignItems: "center" }}>
         <div className="img-container">
-          <Image src="/saber_architecture.png" fill style={{ objectFit: "cover" }} alt="Architecture" priority sizes="100vw" />
+          <img src="/saber_architecture.png" style={{ objectFit: "cover", width: "100%", height: "100%" }} alt="Architecture" />
         </div>
         <div className="flex-col" style={{ gap: "1rem" }}>
           <div className="glass-amethyst" style={{ padding: "1.5rem" }}>
@@ -569,7 +569,7 @@ function getSlides() {
         </div>
       </div>
       <div className="img-container" style={{ flex: 1, minHeight: 0, width: "100%", maxWidth: "800px", margin: "0 auto" }}>
-        <Image src="/parallel_processing.png" fill style={{ objectFit: "cover" }} alt="Parallel" priority sizes="100vw" />
+        <img src="/parallel_processing.png" style={{ objectFit: "cover", width: "100%", height: "100%" }} alt="Parallel" />
       </div>
     </div>,
 
@@ -815,7 +815,7 @@ function getSlides() {
 
     // 28: SABERLEDGER INTRO
     <div key="28" className="slide-wrapper" style={{ justifyContent: "center", alignItems: "center", textAlign: "center" }}>
-      <div style={{ position: "absolute", inset: 0 }}><Image src="/saber_hero.png" fill style={{ objectFit: "cover", opacity: 0.1 }} alt="" priority sizes="100vw" /></div>
+      <div style={{ position: "absolute", inset: 0 }}><img src="/saber_hero.png" style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.1 }} alt="" /></div>
       <div style={{ position: "relative", zIndex: 5, maxWidth: "800px" }}>
         <span className="badge badge-c" style={{ marginBottom: "2rem" }}><Layers size={12} /> New Chain</span>
         <h1 className="t-hero c-grad" style={{ marginBottom: "1.5rem" }}>SaberLedger</h1>
@@ -904,7 +904,7 @@ function getSlides() {
       <h2 className="t-title" style={{ marginBottom: "2rem" }}>Solving CryptoKitties</h2>
       <div className="grid-2" style={{ alignItems: "center" }}>
         <div className="img-container">
-          <Image src="/cryptokitties_chaos.png" fill style={{ objectFit: "cover" }} alt="Cats" priority sizes="100vw" />
+          <img src="/cryptokitties_chaos.png" style={{ objectFit: "cover", width: "100%", height: "100%" }} alt="Cats" />
         </div>
         <div className="glass-amethyst" style={{ padding: "2rem" }}>
           <Zap size={24} className="c-amethyst mb-4" />
@@ -1081,7 +1081,7 @@ function getSlides() {
 
     // 46: CONCLUSION
     <div key="46" className="slide-wrapper" style={{ justifyContent: "center", alignItems: "center", textAlign: "center" }}>
-      <div style={{ position: "absolute", inset: 0 }}><Image src="/saber_hero.png" fill style={{ objectFit: "cover", opacity: 0.15 }} alt="" priority sizes="100vw" /></div>
+      <div style={{ position: "absolute", inset: 0 }}><img src="/saber_hero.png" style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.15 }} alt="" /></div>
       <div style={{ position: "relative", zIndex: 5, maxWidth: "800px" }}>
 
         <h1 className="t-hero c-grad" style={{ marginBottom: "1.5rem" }}>Thank You</h1>
